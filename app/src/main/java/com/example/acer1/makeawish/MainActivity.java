@@ -51,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, VolunteerRegisterActivity.class));
                 break;
             case "Doctor":
-                //startActivity(new Intent(this, DoctorRegisterActivity.class));
+                startActivity(new Intent(this, DoctorRegisterActivity.class));
                 break;
             case "Donor":
-                //startActivity(new Intent(this, DonorRegisterActivity.class));
+                startActivity(new Intent(this, DonorRegisterActivity.class));
                 break;
             default:
                 Toast.makeText(this, "Please select a user type", Toast.LENGTH_SHORT).show();
