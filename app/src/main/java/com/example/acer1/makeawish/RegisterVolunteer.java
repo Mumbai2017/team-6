@@ -41,7 +41,7 @@ class RegisterVolunteer extends AsyncTask<String, Void, String> {
 			String phone =rec[7];
 
             httpclient = new DefaultHttpClient();
-            request = new HttpGet("RegisterVolunteer.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&phone="+phone);
+            request = new HttpGet("13.229.56.82/team-6/PHP_SCRIPTS/Register.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&phone="+phone);
             response = httpclient.execute(request);
         } catch (Exception e) {
             result = "error1";
