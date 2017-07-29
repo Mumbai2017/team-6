@@ -56,7 +56,7 @@
             android:id="@+id/et_vol_dob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Location"
+            android:hint="Date of Birth"
             android:layout_below="@id/et_vol_location" />
         <EditText
             android:id="@+id/et_vol_phone"

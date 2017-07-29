@@ -272,6 +272,13 @@
             android:layout_height="wrap_content"
             android:hint="What would you like to be when you grow up"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@id/btn_show_form"
+            android:onClick="submit_grant_form"
+            android:textAlignment="center"/>
 
     </LinearLayout>
 
