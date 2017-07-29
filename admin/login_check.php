@@ -19,11 +19,14 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         
         $_SESSION['user'] = $row['name'];
-        php header("Location: index.php");
+        
 
     }
+    header("Location: index.php");
+    exit;
 } else {
-    echo "0 results";
+    //php header("Location: loginform.php");
+    //exit;
 }
 
 }

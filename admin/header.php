@@ -45,9 +45,9 @@
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="active">
-                        <a href="dashboard.html">
+                        <a href="children_status.php">
                             <i class="material-icons">dashboard</i>
-                            <p>Children Status</p>
+                            <p>Wish Status</p>
                         </a>
                     </li>
                     <li>
