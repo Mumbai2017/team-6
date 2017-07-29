@@ -36,7 +36,7 @@ public function checkUser()
 	$email_id = $_POST['email'];
 	$pass=$_POST['password'];
 
-	$query = "SELECT * from donor WHERE dn_email= '$email_id;'";
+	$query = "SELECT * from donor WHERE email= '$email_id'and password='$pass'";
 	$result = mysqli_query($connect , $query) or die (mysqli_error($connect));
 	$number_rows = mysqli_num_rows($result);
 	$details = array();
