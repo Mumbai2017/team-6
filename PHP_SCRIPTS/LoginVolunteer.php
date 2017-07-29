@@ -1,7 +1,7 @@
 <?php
 
-         $email = $_GET['email'];
-         $password = $_GET['password'];
+         $email = $_GET['us'];
+         $password = $_GET['pw'];
 
          $con = mysqli_connect("localhost","root","root");
          if (!$con)
@@ -11,7 +11,7 @@
 
            mysqli_select_db($con ,"root");
 
-           $query = "select Name from volunteers where email='$email' AND password='$password'";
+           $query = "select email from volunteers where email='$email' AND password='$password'";
             
            $i=mysqli_query($con,$query);
 
