@@ -25,17 +25,19 @@
 
 // 	}
 // }
-if($_SERVER["REQUEST_METHOD"]=="POST"){
+
 	require 'db_connect.php'
 	checkUser();
-
-}
 public function checkUser()
 {
 	global $connect;
 	$email_id = $_POST['email'];
 	$pass=$_POST['password'];
 
+$email_id='test@gmail.com';
+$pass='12345678';
+echo $email_id;
+echo $pass;
 	$query = "SELECT * from donor WHERE email= '$email_id'and password='$pass'";
 	$result = mysqli_query($connect , $query) or die (mysqli_error($connect));
 	print_r($result);
