@@ -1,7 +1,7 @@
 <?php
 
-         $email = $_GET['email'];
-         $password = $_GET['password'];
+         $email = $_GET['us'];
+         $password = $_GET['pw'];
 
          $con = mysqli_connect("localhost","root","root","makeawish");
          if (!$con)
@@ -11,7 +11,7 @@
 
      
 
-           $query = "select name from donor where email='$email' AND password='$password'";
+           $query = "select email from donor where email='$email' AND password='$password'";
             
            $i=mysqli_query($con,$query);
 
