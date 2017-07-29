@@ -21,3 +21,4 @@ else {
 echo 'Error';
 }
   mysqli_close($con);
+?>
