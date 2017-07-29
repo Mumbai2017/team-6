@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".VolunteerRegisterActivity"></activity>
+        <activity android:name=".WishGrantingForm"></activity>
+
     </application>
 
 </manifest>
