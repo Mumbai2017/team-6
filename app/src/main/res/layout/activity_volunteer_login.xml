@@ -9,7 +9,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit form"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorAccent"
+        android:onClick="submitForm"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Refer a volunteer"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorAccent"
+            android:onClick="referVolunteer"/>
+
 
     </LinearLayout>
 

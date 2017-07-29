@@ -1,5 +1,6 @@
 package com.example.acer1.makeawish;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
@@ -67,12 +68,11 @@ class RegisterVolunteer extends AsyncTask<String, Void, String> {
         if (result.trim().equalsIgnoreCase("1"))
         {
             Toast.makeText(ctx,"Successfully Registered",Toast.LENGTH_LONG).show();
-            //Intent i = new Intent(ctx, FirstActivity.class);
-            //ctx.startActivity(i);
+            ctx.startActivity(new Intent(ctx, VolunteerLoginActivity.class));
         }
         else
         {
-            Toast.makeText(ctx,"Unable to register please try again",Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx,"Unable to register. Please try again",Toast.LENGTH_LONG).show();
         }
     }
 }
