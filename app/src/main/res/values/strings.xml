@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Makeawish</string>
+    <string name="title_activity_scrolling">Wish Granting Form</string>
+    <string name="case1">Case/Inst No.</string>
+    <string name="d1">Physician certifies that condition listed below as been met.</string>
+    <string name="d1.1">1.Physician is familiar with child physical condition and the child has been diagonesd at the time of referral with an illness on the medical
+     list of the Make-A-Wish Foundation of India</string>
+    <string name="d1.2">2.Physician is familiar with child physical condition and the child has been diagonesd at the time of referral with a medical condition
+    that is considered life-threatening</string>
+    <string name="d2">Physician identifies the following medical restrictions and needs that must be considered in fulfilling the wish</string>
+    <string name="d3">Physician is familiar with patient physical condition and certifies that patient is not medically elogible at this time.</string>
+    <string name="action_settings">Settings</string>
 </resources>
