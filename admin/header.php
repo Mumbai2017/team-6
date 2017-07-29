@@ -57,9 +57,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="table.html">
-                            <i class="material-icons">content_paste</i>
-                            <p>Assign Volunteers</p>
+                        <a href="notify_donars.php">
+                            <i class="material-icons text-gray">notifications</i>
+                            <p>Notify Well Wishers</p>
                         </a>
                     </li>
                     <li>
@@ -68,6 +68,13 @@
                             <p>Export CSV</p>
                         </a>
                     </li>
+                    <li>
+                        <a href="table.html">
+                            <i class="material-icons">content_paste</i>
+                            <p>Assign Volunteers</p>
+                        </a>
+                    </li>
+                    
                     
                     <li>
                         <a href="icons.html">
@@ -83,12 +90,7 @@
                         </a>
                     </li>
                     -->
-                    <li>
-                        <a href="notifications.html">
-                            <i class="material-icons text-gray">notifications</i>
-                            <p>Notify Well Wishers</p>
-                        </a>
-                    </li>
+                    
                     
                 </ul>
             </div>
