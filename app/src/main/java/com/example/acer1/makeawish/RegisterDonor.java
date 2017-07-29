@@ -33,7 +33,7 @@ class RegisterDonor extends AsyncTask<String, Void, String> {
             String name = rec[0];
             String email = rec[1];
             String password = rec[2];
-            // String gender = rec[3];
+
 
             String dob = rec[3];
             // String type = rec[6];
@@ -55,7 +55,7 @@ class RegisterDonor extends AsyncTask<String, Void, String> {
             while ((line = rd.readLine()) != null) {
                 result = result + line;
             }
-        } catch (Exception e) {
+        } catch (Exception e)  {
             Log.e("Error2","err "+e);
             result = "error2";
         }
