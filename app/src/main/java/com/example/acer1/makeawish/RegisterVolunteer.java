@@ -36,17 +36,17 @@ class RegisterVolunteer extends AsyncTask<String, Void, String> {
 
             String password = rec[2];
 
-            String name = rec[3];
 
-            String gender = rec[4];
 
-            String location = rec[5];
+            String gender = rec[3];
 
-            String dob = rec[6];
+            String location = rec[4];
 
-            String type = rec[7];
-			String free = rec[8];
-			String phone =rec[9];
+            String dob = rec[5];
+
+            String type = rec[6];
+			String free = rec[7];
+			String phone =rec[8];
 
             httpclient = new DefaultHttpClient();
             request = new HttpGet("RegisterVolunteer.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&free="+free+"&phone="+phone);
@@ -76,9 +76,6 @@ class RegisterVolunteer extends AsyncTask<String, Void, String> {
         {
             Toast.makeText(ctx,"Successfully Registered",Toast.LENGTH_LONG).show();
             Intent i = new Intent(ctx, FirstActivity.class);
-            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            i.putExtra("Register","Yes");
-            i.putExtra("Username",usn);
             ctx.startActivity(i);
         }
         else
