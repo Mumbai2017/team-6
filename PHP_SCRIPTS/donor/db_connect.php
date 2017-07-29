@@ -1,8 +1,8 @@
 <?php
 	define('hostname','localhost');
 	define('user','root');
-	define('password','');
-	define('databaseName','donor_db')
+	define('password','root');
+	define('databaseName','makeawish')
 
 	$connect = mysqli_connect(hostname,user,password,databaseName);
 ?>
