@@ -181,6 +181,10 @@ background: rgba(0, 0, 0, 0) url("assets/img/uname.png") no-repeat scroll 11px c
 {
 background: rgba(0, 0, 0, 0) url("assets/img/pass.png") no-repeat scroll 11px center;
 }
+#phone
+{
+background: rgba(0, 0, 0, 0) url("assets/img/phone.png") no-repeat scroll 11px center;
+}
 
 @media only screen and (max-width: 400px) {
 .login-section {
@@ -212,10 +216,12 @@ width:85%;
 <div class="signup">
 <div class="login-section">
 <h1>Create new Account</h1>
-<form action="" method="post" name="reg">
+<form action="register_admin.php" method="POST" name="reg">
 <input type="text" id="name" name="name" placeholder="Name" value="" required="">
 <input type="text" id="email" name="email" placeholder="Email" value="" required="">
 <input type="text" id="location" name="location" placeholder="Location" value="" required="">
+
+<input type="text" id="phone" name="phone" placeholder="Phone" value="" required="">
 <input type="password" id="password" name="password" placeholder="Password" value="" required="">
 <input onclick="return(submitreg());" type="submit" name="register" value="Register" />
 </form>
