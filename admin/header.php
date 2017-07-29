@@ -45,13 +45,13 @@
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="active">
-                        <a href="children_status.php">
+                        <a href="index.php">
                             <i class="material-icons">dashboard</i>
                             <p>Wish Status</p>
                         </a>
                     </li>
                     <li>
-                        <a href="user.html">
+                        <a href="approve_doctors.php">
                             <i class="material-icons">person</i>
                             <p>Approve Doctors</p>
                         </a>
