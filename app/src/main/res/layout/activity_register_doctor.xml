@@ -72,7 +72,6 @@ tools:context="com.example.acer1.makeawish.DoctorRegisterActivity">
         android:text="Register"
         android:background="@color/colorAccent"
         android:textColor="#FFFFFF"
-        android:layout_below="@id/et_vol_type"
         android:onClick="registerDoctor" />
 </LinearLayout>
 </ScrollView>
