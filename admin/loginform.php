@@ -205,7 +205,7 @@ width:85%;
 <div class="login">
 <div class="login-section">
 <h1>Please Login</h1>
-<form action="index.php" method="post" name="login">
+<form action="login_check.php" method="post" name="login">
 <input type="text" id="email" placeholder="Email" name="email" value="" required="">
 <input type="password" id="password" placeholder="Password" name="password" value="" required="">
 <input onclick="return(submitlogin());" type="submit" name="submit" value="Login" />
