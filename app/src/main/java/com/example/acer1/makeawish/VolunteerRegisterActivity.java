@@ -21,16 +21,20 @@ public class VolunteerRegisterActivity extends AppCompatActivity {
         EditText email = (EditText) findViewById(R.id.et_vol_email);
         EditText location = (EditText) findViewById(R.id.et_vol_location);
         EditText phone = (EditText) findViewById(R.id.et_vol_phone);
+        EditText dob = (EditText) findViewById(R.id.et_vol_dob);
+        EditText type = (EditText) findViewById(R.id.et_vol_type);
 
         RadioGroup gender = (RadioGroup) findViewById(R.id.rg_vol_gender);
         RadioButton checkedGender = (RadioButton) findViewById(gender.getCheckedRadioButtonId());
 
-//        new VolunteerRegister.execute(email.getText().toString() + ","
-//                + password.getText().toString() + ","
-//                + name.getText().toString() + ","
-//                + checkedGender.getText().toString()+ ","
-//                + location.getText().toString() + ","
-//                + phone.getText().toString());
-
+        new RegisterVolunteer(this.getApplicationContext()).execute(
+                name.getText().toString() + ","
+                + email.getText().toString() + ","
+                + password.getText().toString() + ","
+                + checkedGender.getText().toString()+ ","
+                + location.getText().toString() + ","
+                + dob.getText().toString() + ","
+                + type.getText(),toString() + ","
+                + phone.getText().toString());
     }
 }

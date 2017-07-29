@@ -30,26 +30,18 @@ class RegisterVolunteer extends AsyncTask<String, Void, String> {
         try {
             String send = message[0];
             String[] rec = send.split(",");
+
             String name = rec[0];
-
             String email = rec[1];
-
             String password = rec[2];
-
-
-
             String gender = rec[3];
-
             String location = rec[4];
-
             String dob = rec[5];
-
             String type = rec[6];
-			String free = rec[7];
-			String phone =rec[8];
+			String phone =rec[7];
 
             httpclient = new DefaultHttpClient();
-            request = new HttpGet("RegisterVolunteer.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&free="+free+"&phone="+phone);
+            request = new HttpGet("RegisterVolunteer.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&phone="+phone);
             response = httpclient.execute(request);
         } catch (Exception e) {
             result = "error1";
@@ -75,8 +67,8 @@ class RegisterVolunteer extends AsyncTask<String, Void, String> {
         if (result.trim().equalsIgnoreCase("1"))
         {
             Toast.makeText(ctx,"Successfully Registered",Toast.LENGTH_LONG).show();
-            Intent i = new Intent(ctx, FirstActivity.class);
-            ctx.startActivity(i);
+            //Intent i = new Intent(ctx, FirstActivity.class);
+            //ctx.startActivity(i);
         }
         else
         {
