@@ -38,6 +38,7 @@ public function checkUser()
 
 	$query = "SELECT * from donor WHERE email= '$email_id'and password='$pass'";
 	$result = mysqli_query($connect , $query) or die (mysqli_error($connect));
+	print_r($result);
 	$number_rows = mysqli_num_rows($result);
 	$details = array();
 	if($number_rows>0){
