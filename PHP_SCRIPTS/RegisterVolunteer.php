@@ -11,7 +11,7 @@ $phone = $_GET['phone'];
 
  $con = mysqli_connect('localhost','root','root','makeawish') or die('Unable to connect');
 
- $sql = "INSERT INTO volunteers (email,password,name,gender,location,DOB,type,phone) VALUES('$email','$password','$name',$gender,'$location','$dob','$type','$phone')";
+ $sql = "INSERT INTO `volunteers` (`vid`, `email`, `password`, 'name' , `gender`, `location`, `DOB`, `type`,`phone`) VALUES (NULL,'$email','$password','$name','$gender','$location','$dob','$type','$phone')";
 
 
  if(mysqli_query($con,$sql)){
