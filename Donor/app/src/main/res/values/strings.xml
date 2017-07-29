@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Donor</string>
+    <string name="title_activity_user_login">user_login</string>
+</resources>
