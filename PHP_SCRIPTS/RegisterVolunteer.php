@@ -11,7 +11,11 @@ $phone = $_GET['phone'];
 
  $con = mysqli_connect('localhost','root','root','makeawish') or die('Unable to connect');
 
+<<<<<<< HEAD
  $sql = "INSERT INTO volunteers (vid, email, password, name , gender, location, DOB, type) VALUES (NULL,'$email','$password','$name','$gender','$location','$dob','$type')";
+=======
+ $sql = "INSERT INTO volunteers (vid, email, password, name , gender, location, DOB, type,phone) VALUES (NULL,'$email','$password','$name','$gender','$location','$dob','$type','$phone')";
+>>>>>>> 1106f451aef34d722ae2d41a391deb4c00208113
 
 
  if(mysqli_query($con,$sql)){
