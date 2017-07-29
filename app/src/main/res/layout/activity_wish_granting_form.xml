@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acer1.makeawish.WishGrantingForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/pat_case_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Case no" />
+
+    <EditText
+        android:id="@+id/pat_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hospital" />
+    <EditText
+        android:id="@+id/pat_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"/>
+    <RadioGroup
+        android:id="@+id/pat_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Male" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Female"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/et_pat_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/et_pat_mother_tongue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mother tongue" />
+    <EditText
+        android:id="@+id/et_pat_education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Education" />
+    <EditText
+        android:id="@+id/et_pat_father_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Father name" />
+    <EditText
+        android:id="@+id/et_pat_mother_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mother name" />
+    <EditText
+        android:id="@+id/et_pat_guardian_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Guardian Name" />
+    <EditText
+        android:id="@+id/et_pat_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Phone" />
+    <EditText
+        android:id="@+id/et_pat_temp_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Temporary Address" />
+    <EditText
+        android:id="@+id/et_pat_perm_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Permanent Address" />
+
+        <EditText
+            android:id="@+id/et_pat_sibling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No of siblings less than 18 years"/>
+
+        <EditText
+            android:id="@+id/et_pat_perm_referred_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Whether referred from outside?If yes, Sepcify" />
+
+        <CheckBox
+            android:id="@+id/et_pat_d1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d1"/>
+        <TextView
+            android:id="@+id/et_pat_d1.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d1.1"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/et_pat_d1.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d1.2"
+            android:textColor="#000000"/>
+
+        <CheckBox
+            android:id="@+id/et_pat_d2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d2"/>
+        <CheckBox
+            android:id="@+id/et_pat_d3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d3"/>
+
+        <EditText
+            android:id="@+id/et_pat_notes_by_doc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Space for any notes by doctors"/>
+
+        <EditText
+            android:id="@+id/et_pat_doc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name of Doctor"/>
+
+        <EditText
+            android:id="@+id/et_pat_dt_admn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Admission"/>
+
+        <EditText
+            android:id="@+id/et_pat_dt_identified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Identified"/>
+
+        <EditText
+            android:id="@+id/et_pat_stay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Approx Duration of stay"/>
+
+        <EditText
+            android:id="@+id/et_pat_wish1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1st Wish identified with explaination"/>
+
+        <EditText
+            android:id="@+id/et_pat_wish2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2st Wish identified with explaination"/>
+
+        <EditText
+            android:id="@+id/et_pat_wish3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="3st Wish identified with explaination"/>
+
+        <EditText
+            android:id="@+id/et_pat_prposed_dt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Proposed Date of wish fulfillment"/>
+
+        <EditText
+            android:id="@+id/et_pat_rushwish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Is it rushwish?(Yes/No)"/>
+
+        <EditText
+            android:id="@+id/et_pat_q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tell me about your family"/>
+
+        <EditText
+            android:id="@+id/et_pat_q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tell me about your friend"/>
+
+        <EditText
+            android:id="@+id/et_pat_q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Which Govt ID of Parent is taken"/>
+
+        <TextView
+            android:id="@+id/et_pat_q4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Who/What is your favourite"/>
+
+        <EditText
+            android:id="@+id/et_pat_4.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Color"/>
+
+        <EditText
+            android:id="@+id/et_pat_4.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book/Story"/>
+        <EditText
+            android:id="@+id/et_pat_4.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Game"/>
+
+        <EditText
+            android:id="@+id/et_pat_4.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Food"/>
+        <EditText
+            android:id="@+id/et_pat_4.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Music/Movie"/>
+        <EditText
+            android:id="@+id/et_pat_4.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hobby"/>
+        <EditText
+            android:id="@+id/et_pat_4.7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TV Show/Cartoon"/>
+
+        <EditText
+            android:id="@+id/et_pat_4.8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Actress/Actor"/>
+
+        <EditText
+            android:id="@+id/et_pat_q5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Have you been on a school trip or picnic with your family and where?"/>
+
+        <EditText
+            android:id="@+id/et_pat_q6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What would you like to be when you grow up"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
