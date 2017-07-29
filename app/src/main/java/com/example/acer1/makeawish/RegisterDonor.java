@@ -33,14 +33,15 @@ class RegisterDonor extends AsyncTask<String, Void, String> {
             String name = rec[0];
             String email = rec[1];
             String password = rec[2];
-            String gender = rec[3];
-            String location = rec[4];
-            String dob = rec[5];
-            String type = rec[6];
-            String phone =rec[7];
+
+
+            String dob = rec[3];
+            // String type = rec[6];
+            String phone =rec[4];
+            String location = rec[5];
 
             httpclient = new DefaultHttpClient();
-            request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterDonor.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&phone="+phone);
+            request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterDonor.php?email="+email+"&password="+password+"&name="+name+"&location="+location+"&DOB="+dob+"&phone="+phone);
             response = httpclient.execute(request);
         } catch (Exception e) {
             result = e.getMessage();
@@ -54,7 +55,7 @@ class RegisterDonor extends AsyncTask<String, Void, String> {
             while ((line = rd.readLine()) != null) {
                 result = result + line;
             }
-        } catch (Exception e) {
+        } catch (Exception e)  {
             Log.e("Error2","err "+e);
             result = "error2";
         }

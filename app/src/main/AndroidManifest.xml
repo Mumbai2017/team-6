@@ -22,7 +22,10 @@
         </activity>
         <activity android:name=".VolunteerRegisterActivity" />
         <activity android:name=".WishGrantingForm" />
-        <activity android:name=".DoctorRegisterActivity"></activity>
+        <activity android:name=".DoctorRegisterActivity" />
+        <activity android:name=".DonorRegisterActivity" />
+        <activity android:name=".VolunteerLoginActivity" />
+        <activity android:name=".DoctorReferral"></activity>
     </application>
 
 </manifest>

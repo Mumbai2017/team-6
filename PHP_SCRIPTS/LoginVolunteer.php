@@ -20,7 +20,7 @@
           while($row = mysqli_fetch_array($i))
             {
              $count = $count+1;
-           //  $nm = $row['Name'];
+           //  $nm = $row ['Name'];
                              }
           
  if($count==1) {

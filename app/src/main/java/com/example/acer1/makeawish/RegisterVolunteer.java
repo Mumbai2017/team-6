@@ -15,7 +15,6 @@ import cz.msebera.android.httpclient.impl.client.DefaultHttpClient;
 
 class RegisterVolunteer extends AsyncTask<String, Void, String> {
     Context ctx;
-    
 
     public RegisterVolunteer(Context context)
     {
@@ -38,10 +37,11 @@ class RegisterVolunteer extends AsyncTask<String, Void, String> {
             String location = rec[4];
             String dob = rec[5];
             String type = rec[6];
-			String phone =rec[7];
+            String phone = rec[7];
 
             httpclient = new DefaultHttpClient();
             request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterVolunteer.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&phone="+phone);
+            System.out.println("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterVolunteer.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&phone="+phone);
             response = httpclient.execute(request);
         } catch (Exception e) {
             result = e.getMessage();
@@ -68,14 +68,11 @@ class RegisterVolunteer extends AsyncTask<String, Void, String> {
         if (result.trim().equalsIgnoreCase("1"))
         {
             Toast.makeText(ctx,"Successfully Registered",Toast.LENGTH_LONG).show();
-            //Intent i = new Intent(ctx, FirstActivity.class);
-            //ctx.startActivity(i);
+            ctx.startActivity(new Intent(ctx, VolunteerLoginActivity.class));
         }
         else
         {
-            Toast.makeText(ctx,"Unable to register please try again",Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx,"Unable to register. Please try again",Toast.LENGTH_LONG).show();
         }
-
-
     }
 }
