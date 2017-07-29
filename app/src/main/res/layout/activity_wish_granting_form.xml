@@ -45,11 +45,11 @@
             android:layout_height="match_parent"
             android:text="Female"/>
     </RadioGroup>
-    <EditText
+    <Button
         android:id="@+id/et_pat_number"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Age"
+        android:hint="Date of Birth"
         android:inputType="number" />
     <EditText
         android:id="@+id/et_pat_mother_tongue"
@@ -146,13 +146,13 @@
             android:layout_height="wrap_content"
             android:hint="Name of Doctor"/>
 
-        <EditText
+        <Button
             android:id="@+id/et_pat_dt_admn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Date of Admission"/>
 
-        <EditText
+        <Button
             android:id="@+id/et_pat_dt_identified"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -182,7 +182,7 @@
             android:layout_height="wrap_content"
             android:hint="3st Wish identified with explaination"/>
 
-        <EditText
+        <Button
             android:id="@+id/et_pat_prposed_dt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
