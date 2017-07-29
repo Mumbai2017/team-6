@@ -28,16 +28,15 @@ public class DoctorRegisterActivity extends AppCompatActivity {
         RadioGroup gender = (RadioGroup) findViewById(R.id.rg_doc_gender);
         RadioButton checkedGender = (RadioButton) findViewById(gender.getCheckedRadioButtonId());
 
-//        new Registe.rVolunteer(this.getApplicationContext()).execute(
-//                name.getText().toString() + ","
-//                        + email.getText().toString() + ","
-//                        + password.getText().toString() + ","
-//                        + checkedGender.getText().toString()+ ","
-//                        + location.getText().toString() + ","
-//                        + dob.getText().toString() + ","
-//                        + type.getText(),toString() + ","
-//                        + phone.getText().toString());
-//    }
-
+        new RegisterDoctor(this.getApplicationContext()).execute(
+                email.getText().toString() + ","
+                        + password.getText().toString() + ","
+                        + name.getText().toString() + ","
+                        + age.getText().toString()+ ","
+                        + phone.getText().toString() + ","
+                        + alt_phone.getText().toString() + ","
+                        + hosp.getText(),toString() + ","
+                        + dob.getText().toString()
+                        + checkedGender.getText().toString());
     }
 }
