@@ -69,7 +69,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="table.html">
+                        <a href="assign_volunteers.php">
                             <i class="material-icons">content_paste</i>
                             <p>Assign Volunteers</p>
                         </a>
