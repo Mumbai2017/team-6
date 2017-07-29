@@ -1,6 +1,5 @@
 package com.example.acer1.makeawish;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
@@ -13,11 +12,11 @@ import cz.msebera.android.httpclient.client.HttpClient;
 import cz.msebera.android.httpclient.client.methods.HttpGet;
 import cz.msebera.android.httpclient.impl.client.DefaultHttpClient;
 
-class RegisterVolunteer extends AsyncTask<String, Void, String> {
+class RegisterDoctor extends AsyncTask<String, Void, String> {
     Context ctx;
-    
 
-    public RegisterVolunteer(Context context)
+
+    public RegisterDoctor(Context context)
     {
         ctx = context;
     }
@@ -31,17 +30,18 @@ class RegisterVolunteer extends AsyncTask<String, Void, String> {
             String send = message[0];
             String[] rec = send.split(",");
 
-            String name = rec[0];
-            String email = rec[1];
-            String password = rec[2];
-            String gender = rec[3];
-            String location = rec[4];
-            String dob = rec[5];
-            String type = rec[6];
-			String phone =rec[7];
+            String email = rec[0];
+            String password = rec[1];
+            String name = rec[2];
+            String age = rec[3];
+            String phone = rec[4];
+            String alt_phone = rec[5];
+            String hosp = rec[6];
+            String dob = rec[7];
+            String gender = rec[8];
 
             httpclient = new DefaultHttpClient();
-            request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterVolunteer.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&phone="+phone);
+            request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterDoctor.php?email="+email+"&password="+password+"&name="+name+"&age="+age+"&phone="+phone+"&alt_phone"+alt_phone+"&hosp="+hosp+"&DOB="+dob+"gender="+gender);
             response = httpclient.execute(request);
         } catch (Exception e) {
             result = e.getMessage();
