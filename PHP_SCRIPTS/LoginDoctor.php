@@ -3,7 +3,7 @@
          $email = $_GET['email'];
          $password = $_GET['password'];
 
-         $con = mysqli_connect("localhost","root","root");
+         $con = mysqli_connect("localhost","root","root","makeawish");
          if (!$con)
                {
                          die('Could not connect: ' . mysql_error());
@@ -11,7 +11,7 @@
 
            mysqli_select_db($con ,"root");
 
-           $query = "select Name from doctor where email='$email' AND password='$password'";
+           $query = "select name from doctor where email='$email' AND password='$password'";
             
            $i=mysqli_query($con,$query);
 
@@ -25,6 +25,9 @@
           
  if($count==1) {
 echo "1";
+}
+else{
+echo mysqli_error($con);
 }
  mysqli_close($con);
                
