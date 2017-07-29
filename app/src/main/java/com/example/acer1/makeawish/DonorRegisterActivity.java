@@ -21,13 +21,13 @@ public class DonorRegisterActivity extends AppCompatActivity {
         EditText phone = (EditText) findViewById(R.id.et_vol_phone);
         EditText location = (EditText) findViewById(R.id.et_vol_location);
 
-//        new RegisterDonor(this.getApplicationContext()).execute(
-//                name.getText().toString() + ","
-//                        + email.getText().toString() + ","
-//                        + password.getText().toString() + ","
-//                        + name.getText().toString() + ","
-//                        + dob.getText().toString() + ","
-//                        + phone.getText().toString() + ","
-//                        + location.getText().toString());
+        new RegisterDonor(this.getApplicationContext()).execute(
+                name.getText().toString() + ","
+                        + email.getText().toString() + ","
+                        + password.getText().toString() + ","
+                        + name.getText().toString() + ","
+                        + dob.getText().toString() + ","
+                        + phone.getText().toString() + ","
+                        + location.getText().toString());
     }
 }

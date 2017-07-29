@@ -36,7 +36,7 @@ public class DoctorRegisterActivity extends AppCompatActivity {
                         + phone.getText().toString() + ","
                         + alt_phone.getText().toString() + ","
                         + hosp.getText(),toString() + ","
-                        + dob.getText().toString()
+                        + dob.getText().toString() + ","
                         + checkedGender.getText().toString());
     }
 }

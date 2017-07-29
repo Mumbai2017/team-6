@@ -1,6 +1,5 @@
 package com.example.acer1.makeawish;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
@@ -15,7 +14,6 @@ import cz.msebera.android.httpclient.impl.client.DefaultHttpClient;
 
 class RegisterVolunteer extends AsyncTask<String, Void, String> {
     Context ctx;
-    
 
     public RegisterVolunteer(Context context)
     {
@@ -38,10 +36,11 @@ class RegisterVolunteer extends AsyncTask<String, Void, String> {
             String location = rec[4];
             String dob = rec[5];
             String type = rec[6];
-			String phone =rec[7];
+            String phone = rec[7];
 
             httpclient = new DefaultHttpClient();
             request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterVolunteer.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&phone="+phone);
+            System.out.println("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterVolunteer.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&phone="+phone);
             response = httpclient.execute(request);
         } catch (Exception e) {
             result = e.getMessage();
@@ -75,7 +74,5 @@ class RegisterVolunteer extends AsyncTask<String, Void, String> {
         {
             Toast.makeText(ctx,"Unable to register please try again",Toast.LENGTH_LONG).show();
         }
-
-
     }
 }

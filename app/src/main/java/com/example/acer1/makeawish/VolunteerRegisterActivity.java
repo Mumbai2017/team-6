@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class VolunteerRegisterActivity extends AppCompatActivity {
 
@@ -25,7 +26,8 @@ public class VolunteerRegisterActivity extends AppCompatActivity {
         EditText type = (EditText) findViewById(R.id.et_vol_type);
 
         RadioGroup gender = (RadioGroup) findViewById(R.id.rg_vol_gender);
-        RadioButton checkedGender = (RadioButton) findViewById(gender.getCheckedRadioButtonId());
+        int selectedId = gender.getCheckedRadioButtonId();
+        RadioButton checkedGender = (RadioButton) findViewById(selectedId);
 
         new RegisterVolunteer(this.getApplicationContext()).execute(
                 name.getText().toString() + ","
@@ -34,7 +36,7 @@ public class VolunteerRegisterActivity extends AppCompatActivity {
                 + checkedGender.getText().toString()+ ","
                 + location.getText().toString() + ","
                 + dob.getText().toString() + ","
-                + type.getText(),toString() + ","
+                + type.getText().toString() + ","
                 + phone.getText().toString());
     }
 }

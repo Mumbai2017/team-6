@@ -38,10 +38,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_vol_gender">
             <RadioButton
+                android:id="@+id/rb_vol_male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Male" />
             <RadioButton
+                android:id="@+id/rb_vol_female"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Female" />
