@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Makeawish</string>
+    <string name="app_name">MakeAWish</string>
     <string name="title_activity_scrolling">Wish Granting Form</string>
     <string name="case1">Case/Inst No.</string>
     <string name="d1">Physician certifies that condition listed below as been met.</string>

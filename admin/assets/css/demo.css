@@ -18,6 +18,11 @@ width:85%;
 }
 }
 
+.padd{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
 #map{
     position:relative;
     width:100%;
