@@ -1,7 +1,9 @@
 <?php
-	$conn= mysqli_connect("http://13.229.56.82/phpmyadmin","root","root",'makeawish');
-	if(!$conn){
-		echo "Connection Failed"
-	}
-	session_start();
+	define('hostname','localhost');
+	define('user','root');
+	define('password','root');
+	define('databaseName','makeawish')
+echo "Hello";
+
+	$connect = mysqli_connect(hostname,user,password,databaseName);
 ?>
