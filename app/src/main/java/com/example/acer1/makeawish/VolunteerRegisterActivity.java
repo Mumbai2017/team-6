@@ -16,6 +16,7 @@ public class VolunteerRegisterActivity extends AppCompatActivity {
 
     Button btn;
     int year_x,month_x,day_x;
+    String date = "1999-05-12";
     static final int DIALOG_ID=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +45,7 @@ public class VolunteerRegisterActivity extends AppCompatActivity {
                 + password.getText().toString() + ","
                 + checkedGender.getText().toString()+ ","
                 + location.getText().toString() + ","
-                + dob.getText().toString() + ","
+                + date + ","
                 + type.getText().toString() + ","
                 + phone.getText().toString());
     }
@@ -66,9 +67,9 @@ public class VolunteerRegisterActivity extends AppCompatActivity {
         @Override
         public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
             year_x=year;
-            month_x=month;
+            month_x=month+1;
             day_x=dayOfMonth;
-            Toast.makeText(VolunteerRegisterActivity.this,year_x+"/"+month_x+"/"+day_x, Toast.LENGTH_LONG).show();
+            date=year_x+"-"+month_x+"-"+day_x;
 
         }
     };
