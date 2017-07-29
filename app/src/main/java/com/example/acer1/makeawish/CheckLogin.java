@@ -42,20 +42,32 @@ class CheckLogin extends AsyncTask<String, Void, String> {
             type = rec[2];
             Log.e("Check", "us=" + us + " pass=" + pw + "type=" + type + "ok");
             if (type.equalsIgnoreCase("Volunteer")) {
+                try{
                 httpclient = new DefaultHttpClient();
                 request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/LoginVolunteer.php?us=" + us + "&pw=" + pw);
                 response = httpclient.execute(request);
             }
+            catch (Exception e) {
+                result = "error1";
+            }}
             if (type.equalsIgnoreCase("Donor")) {
+                try{
                 httpclient = new DefaultHttpClient();
                 request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/LoginDonor.php?us=" + us + "&pw=" + pw);
                 response = httpclient.execute(request);
             }
+                catch (Exception e) {
+                    result = "error1";
+                }}
             if (type.equalsIgnoreCase("Doctor")) {
-                httpclient = new DefaultHttpClient();
+                try {
+                    httpclient = new DefaultHttpClient();
+
                 request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/LoginDoctor.php?us=" + us + "&pw=" + pw);
                 response = httpclient.execute(request);
-            }
+            }catch (Exception e) {
+                    result = "error1";
+                }}
         } catch (Exception e) {
             result = "error1";
         }
@@ -91,14 +103,14 @@ class CheckLogin extends AsyncTask<String, Void, String> {
                 StrictMode.setThreadPolicy(policy);
             }
 
-            String url = "http://dcshahfamily.esy.es/DateUp.php";
-            HttpClient client = new DefaultHttpClient();
-
-            try {
-                client.execute(new HttpGet(url));
-            } catch (IOException e) {
-                //do something here
-            }
+//            String url = "http://dcshahfamily.esy.es/DateUp.php";
+//            HttpClient client = new DefaultHttpClient();
+//
+//            try {
+//                client.execute(new HttpGet(url));
+//            } catch (IOException e) {
+//                //do something here
+//            }
             switch (type) {
                 case "Volunteer":
                     Intent i = new Intent(ctx, VolunteerLoginActivity.class);

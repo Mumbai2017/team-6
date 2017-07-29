@@ -32,7 +32,7 @@ public class VolunteerRegisterActivity extends AppCompatActivity {
         EditText email = (EditText) findViewById(R.id.et_vol_email);
         EditText location = (EditText) findViewById(R.id.et_vol_location);
         EditText phone = (EditText) findViewById(R.id.et_vol_phone);
-        EditText dob = (EditText) findViewById(R.id.et_vol_dob);
+      //  EditText dob = (EditText) findViewById(R.id.et_vol_dob);
         EditText type = (EditText) findViewById(R.id.et_vol_type);
 
         RadioGroup gender = (RadioGroup) findViewById(R.id.rg_vol_gender);

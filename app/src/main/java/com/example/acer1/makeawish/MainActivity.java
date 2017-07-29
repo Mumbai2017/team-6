@@ -33,8 +33,9 @@ public class MainActivity extends AppCompatActivity {
     public void login(View view) {
         String userType = userList.getSelectedItem().toString();
 
-
+        Toast.makeText(this,userType, Toast.LENGTH_SHORT).show();
         switch (userType) {
+
             case "Volunteer":
                 new CheckLogin(this.getApplicationContext()).execute(
                                 email.getText().toString() + ","
