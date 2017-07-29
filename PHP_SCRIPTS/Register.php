@@ -9,7 +9,7 @@ $type = $_GET['type'];
 
 $phone = $_GET['phone'];
 
- $con = mysqli_connect('13.229.56.82','root','root') or die('Unable to connect');
+ $con = mysqli_connect('localhost','root','root','makeawish') or die('Unable to connect');
 
  $sql = "INSERT INTO volunteers (email,password,name,gender,location,DOB,type,phone) VALUES('$email','$password','$name',$gender,'$location','$dob','$type','$phone')";
 
