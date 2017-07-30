@@ -1,5 +1,6 @@
 package com.example.acer1.makeawish;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
@@ -42,6 +43,7 @@ class RegisterDoctor extends AsyncTask<String, Void, String> {
 
             httpclient = new DefaultHttpClient();
             request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterDoctor.php?email="+email+"&password="+password+"&name="+name+"&age="+age+"&phone="+phone+"&altphone"+altphone+"&hosp="+hosp+"&DOB="+dob+"gender="+gender);
+           System.out.println("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterDoctor.php?email="+email+"&password="+password+"&name="+name+"&age="+age+"&phone="+phone+"&altphone"+altphone+"&hosp="+hosp+"&DOB="+dob+"gender="+gender);
             response = httpclient.execute(request);
         } catch (Exception e) {
             result = e.getMessage();
@@ -68,8 +70,8 @@ class RegisterDoctor extends AsyncTask<String, Void, String> {
         if (result.trim().equalsIgnoreCase("1"))
         {
             Toast.makeText(ctx,"Successfully Registered",Toast.LENGTH_LONG).show();
-            //Intent i = new Intent(ctx, FirstActivity.class);
-            //ctx.startActivity(i);
+            Intent i = new Intent(ctx, DoctorReferral.class);
+            ctx.startActivity(i);
         }
         else
         {
