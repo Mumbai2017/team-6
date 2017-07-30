@@ -13,6 +13,10 @@ public class DonorLoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_donor_login);
     }
 
+    public void makePayment(View view) {
+        startActivity(new Intent(this, PaymentActivity.class));
+    }
+
     public void getHistory(View view) {
         startActivity(new Intent(this, HistoryFetcherActivity.class));
     }

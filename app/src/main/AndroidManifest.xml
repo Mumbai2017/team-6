@@ -26,7 +26,8 @@
         <activity android:name=".DonorRegisterActivity" />
         <activity android:name=".VolunteerLoginActivity" />
         <activity android:name=".DoctorReferral" />
-        <activity android:name=".DonorLoginActivity"></activity>
+        <activity android:name=".DonorLoginActivity" />
+        <activity android:name=".PaymentActivity"></activity>
     </application>
 
 </manifest>
