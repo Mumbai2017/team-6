@@ -2,7 +2,7 @@
 
          $email = $_GET['us'];
          $password = $_GET['pw'];
-echo "1"
+echo "1" ;
 //          $con = mysqli_connect("localhost","root","root");
 //          if (!$con)
 //                {
