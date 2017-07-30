@@ -35,13 +35,13 @@ class RegisterDoctor extends AsyncTask<String, Void, String> {
             String name = rec[2];
             String age = rec[3];
             String phone = rec[4];
-            String alt_phone = rec[5];
+            String altphone = rec[5];
             String hosp = rec[6];
             String dob = rec[7];
             String gender = rec[8];
 
             httpclient = new DefaultHttpClient();
-            request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterDoctor.php?email="+email+"&password="+password+"&name="+name+"&age="+age+"&phone="+phone+"&alt_phone"+alt_phone+"&hosp="+hosp+"&DOB="+dob+"gender="+gender);
+            request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterDoctor.php?email="+email+"&password="+password+"&name="+name+"&age="+age+"&phone="+phone+"&altphone"+altphone+"&hosp="+hosp+"&DOB="+dob+"gender="+gender);
             response = httpclient.execute(request);
         } catch (Exception e) {
             result = e.getMessage();
