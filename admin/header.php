@@ -63,7 +63,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="typography.html">
+                        <a href="export.php">
                             <i class="material-icons">library_books</i>
                             <p>Export CSV</p>
                         </a>
@@ -82,6 +82,16 @@
                             <p>Social Media Posts</p>
                         </a>
                     </li>
+
+                    
+                    <li>
+                        <a href="prioritize_requests.php">
+                            <i class="material-icons">bubble_chart</i>
+                            <p>Suggested Queue</p>
+                        </a>
+                    </li>
+
+
                     <!--
                     <li>
                         <a href="maps.html">
