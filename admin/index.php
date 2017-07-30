@@ -6,8 +6,8 @@ include 'connect.php';
 
 <?php
 
-echo "Login Successful";
-echo $_SESSION['user'];
+//echo "Login Successful";
+//echo $_SESSION['user'];
 
 include 'children_status.php';
 

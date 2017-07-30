@@ -72,5 +72,16 @@ if ($result->num_rows > 0) {
 <?php
 
 	include 'footer.php';
+
+	/*
+
+$convert_date = strtotime($dob);
+        $month = date('F',$convert_date);
+        $year = date('Y',$convert_date);
+        $name_day = date('l',$convert_date);
+        $day = date('j',$convert_date);
+    	$days = $day - $date;
+
+	*/
 	
 ?>			
