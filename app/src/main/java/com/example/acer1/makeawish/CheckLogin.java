@@ -20,7 +20,7 @@ import static android.content.Context.MODE_PRIVATE;
 
 class CheckLogin extends AsyncTask<String, Void, String> {
     Context ctx;
-    String us, pw, type;
+    String us, pw, type1;
 
     public CheckLogin(Context context) {
         ctx = context;
@@ -39,9 +39,9 @@ class CheckLogin extends AsyncTask<String, Void, String> {
 
             pw = rec[1];
 
-            type = rec[2];
-            Log.e("Check", "us=" + us + " pass=" + pw + "type=" + type + "ok");
-            if (type.equalsIgnoreCase("Volunteer")) {
+            type1 = rec[2];
+            Log.e("Check", "us=" + us + " pass=" + pw + "type=" + type1 + "ok");
+            if (type1.equalsIgnoreCase("Volunteer")) {
                 try{
                 httpclient = new DefaultHttpClient();
                 request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/LoginVolunteer.php?us=" + us + "&pw=" + pw);
@@ -50,7 +50,7 @@ class CheckLogin extends AsyncTask<String, Void, String> {
             catch (Exception e) {
                 result = "error1";
             }}
-            if (type.equalsIgnoreCase("Donor")) {
+            else if (type1.equalsIgnoreCase("Donor")) {
                 try{
                 httpclient = new DefaultHttpClient();
                 request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/LoginDonor.php?us=" + us + "&pw=" + pw);
@@ -59,7 +59,7 @@ class CheckLogin extends AsyncTask<String, Void, String> {
                 catch (Exception e) {
                     result = "error1";
                 }}
-            if (type.equalsIgnoreCase("Doctor")) {
+            else if (type1.equalsIgnoreCase("Doctor")) {
                 try {
                     httpclient = new DefaultHttpClient();
 
@@ -93,7 +93,7 @@ class CheckLogin extends AsyncTask<String, Void, String> {
             SharedPreferences.Editor editor = ctx.getSharedPreferences("LoginPref", MODE_PRIVATE).edit();
             editor.putString("email", us);
             editor.putString("Password", pw);
-            editor.putString("type", type);
+            editor.putString("type", type1);
             editor.putString("text", "YES");
             editor.commit();
 
@@ -111,7 +111,7 @@ class CheckLogin extends AsyncTask<String, Void, String> {
 //            } catch (IOException e) {
 //                //do something here
 //            }
-            switch (type) {
+            switch (type1) {
                 case "Volunteer":
                     Intent i = new Intent(ctx, VolunteerLoginActivity.class);
                     i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
