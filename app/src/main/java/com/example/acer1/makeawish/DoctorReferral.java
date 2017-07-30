@@ -66,12 +66,12 @@ public class DoctorReferral extends AppCompatActivity {
         EditText dis = (EditText) findViewById(R.id.ref_dis);
         TextView dob = (TextView) findViewById(R.id.ref_dob1);
 
-        new PatientReferral(this).execute(
-                refName.getText().toString() + ","
-                        + fatherName.getText().toString() + ","
-                        + motherName.getText().toString() + ","
-                        + dis.getText().toString() + ","
-                        + dob
-        );
+//        new PatientReferral(this).execute(
+//                refName.getText().toString() + ","
+//                        + fatherName.getText().toString() + ","
+//                        + motherName.getText().toString() + ","
+//                        + dis.getText().toString() + ","
+//                        + dob
+//        );
     }
 }

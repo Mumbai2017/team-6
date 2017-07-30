@@ -29,9 +29,10 @@ public class WishGrantingForm extends AppCompatActivity {
         showDialogbtn();showDialogbtn2();
         showDialogbtn3();
 
-
-
-
+        dt = (TextView) findViewById(R.id.btn_pat_dob);
+        dt1 = (TextView) findViewById(R.id.btn_pat_dt_admn);
+        dt2 = (TextView) findViewById(R.id.btn_pat_dt_identified);
+        dt3 = (TextView) findViewById(R.id.btn_pat_proposed_dt);
     }
 
     public void showDialogbtn(){
@@ -68,7 +69,7 @@ public class WishGrantingForm extends AppCompatActivity {
 
     public void showDialogbtn1(){
         btn1=(Button) findViewById(R.id.btn_pat_dt_admn);
-        btn.setOnClickListener(
+        btn1.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -79,8 +80,8 @@ public class WishGrantingForm extends AppCompatActivity {
     }
 
     public void showDialogbtn2(){
-        btn1=(Button) findViewById(R.id.btn_pat_dt_admn);
-        btn.setOnClickListener(
+        btn2=(Button) findViewById(R.id.btn_pat_dt_identified);
+        btn2.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -90,8 +91,8 @@ public class WishGrantingForm extends AppCompatActivity {
         );
     }
     public void showDialogbtn3(){
-        btn1=(Button) findViewById(R.id.btn_pat_proposed_dt);
-        btn.setOnClickListener(
+        btn3=(Button) findViewById(R.id.btn_pat_proposed_dt);
+        btn3.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
