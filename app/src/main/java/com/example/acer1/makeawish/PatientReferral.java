@@ -40,7 +40,7 @@ class PatientReferral extends AsyncTask<String, Void, String> {
             //  String phone = rec[7];
 
             httpclient = new DefaultHttpClient();
-            request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/DoctorReferral.php?refname="+refname+"&fathername="+fathername+"&mothernamename="+mothername+"&disease="+disease+"&DOB="+dob);
+            request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/doctorreferral.php?refname="+refname+"&fathername="+fathername+"&mothernamename="+mothername+"&disease="+disease+"&DOB="+dob);
             // System.out.println("http://13.229.56.82/team-6/PHP_SCRIPTS/RegisterVolunteer.php?email="+email+"&password="+password+"&name="+name+"&gender="+gender+"&location="+location+"&DOB="+dob+"&type="+type+"&phone="+phone);
             response = httpclient.execute(request);
         } catch (Exception e) {
