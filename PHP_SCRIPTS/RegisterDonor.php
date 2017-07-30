@@ -12,7 +12,7 @@ $phone = $_GET['phone'];
  $con = mysqli_connect('localhost','root','root','makeawish') or die('Unable to connect');
 
 
- $sql = "INSERT INTO donor (did, email, password, name, location, date, phone) VALUES (NULL,'$email','$password','$name','$location','$dob','$phone')";
+ $sql = "INSERT INTO donor (did, email, password, name, location, DOB, phone) VALUES (NULL,'$email','$password','$name','$location','$dob','$phone')";
 
 
  if(mysqli_query($con,$sql)){
