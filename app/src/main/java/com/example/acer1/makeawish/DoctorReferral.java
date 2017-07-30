@@ -48,6 +48,7 @@ public class DoctorReferral extends AppCompatActivity {
             month_x = month + 1;
             day_x=dayOfMonth;
             dob = year_x+"/"+month_x+"/"+day_x;
+            dob1.setText(dob);
         }
     };
 
@@ -64,14 +65,14 @@ public class DoctorReferral extends AppCompatActivity {
         EditText fatherName = (EditText) findViewById(R.id.ref_fname);
         EditText motherName = (EditText) findViewById(R.id.ref_mname);
         EditText dis = (EditText) findViewById(R.id.ref_dis);
-        TextView dob = (TextView) findViewById(R.id.ref_dob1);
+       // TextView tv_dob = (TextView) findViewById(R.id.ref_dob1);
 
-//        new PatientReferral(this).execute(
-//                refName.getText().toString() + ","
-//                        + fatherName.getText().toString() + ","
-//                        + motherName.getText().toString() + ","
-//                        + dis.getText().toString() + ","
-//                        + dob
-//        );
+        new PatientReferral(this).execute(
+                refName.getText().toString() + ","
+                        + fatherName.getText().toString() + ","
+                        + motherName.getText().toString() + ","
+                        + dis.getText().toString() + ","
+                        + dob
+        );
     }
 }

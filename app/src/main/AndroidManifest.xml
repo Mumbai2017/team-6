@@ -29,6 +29,7 @@
         <activity android:name=".DoctorReferral" />
         <activity android:name=".DonorLoginActivity" />
         <activity android:name=".PaymentActivity" />
+        <activity android:name=".HistoryFetcherActivity"/>
     </application>
 
 </manifest>

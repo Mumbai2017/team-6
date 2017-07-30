@@ -39,7 +39,7 @@ public class DonorRegisterActivity extends AppCompatActivity {
                 name.getText().toString() + ","
                         + email.getText().toString() + ","
                         + password.getText().toString() + ","
-                        + dob + ","
+                        + date + ","
                         + phone.getText().toString() + ","
                         + location.getText().toString());
     }
