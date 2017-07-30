@@ -24,6 +24,7 @@ public class DonorRegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donor_register);
         dob = (TextView) findViewById(R.id.et_don_dob1);
+
         showDialogbtn();
     }
 
@@ -38,7 +39,7 @@ public class DonorRegisterActivity extends AppCompatActivity {
                 name.getText().toString() + ","
                         + email.getText().toString() + ","
                         + password.getText().toString() + ","
-                        + dob.getText().toString() + ","
+                        + dob + ","
                         + phone.getText().toString() + ","
                         + location.getText().toString());
     }
@@ -63,6 +64,8 @@ public class DonorRegisterActivity extends AppCompatActivity {
             month_x=month;
             day_x=dayOfMonth;
 
+            date=year_x+"-"+month_x+"-"+day_x;
+            dob.setText(date);
         }
     };
 

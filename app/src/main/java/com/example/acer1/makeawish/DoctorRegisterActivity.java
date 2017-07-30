@@ -23,7 +23,7 @@ public class DoctorRegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_doctor);
-        dob = (TextView) findViewById(R.id.et_vol_dob1);
+        dob = (TextView) findViewById(R.id.et_doc_dob1);
 
         showDialogbtn();
     }
@@ -69,9 +69,10 @@ public class DoctorRegisterActivity extends AppCompatActivity {
         @Override
         public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
             year_x=year;
-            month_x=month;
+            month_x=month+1;
             day_x=dayOfMonth;
-            Toast.makeText(DoctorRegisterActivity.this,year_x+"/"+month_x+"/"+day_x, Toast.LENGTH_LONG).show();
+            date=year_x+"-"+month_x+"-"+day_x;
+            dob.setText(date);
 
         }
     };

@@ -44,8 +44,9 @@ class CheckLogin extends AsyncTask<String, Void, String> {
             if (type1.equalsIgnoreCase("Volunteer")) {
                 try{
                 httpclient = new DefaultHttpClient();
-                request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/LoginVolunteer.php?us=" + us + "&pw=" + pw);
-                response = httpclient.execute(request);
+                    request = new HttpGet("http://13.229.56.82/team-6/PHP_SCRIPTS/LoginVolunteer.php?us=" + us + "&pw=" + pw);
+                System.out.println("here");
+                    response = httpclient.execute(request);
             }
             catch (Exception e) {
                 result = "error1";
