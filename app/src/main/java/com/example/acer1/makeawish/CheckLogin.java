@@ -118,16 +118,16 @@ class CheckLogin extends AsyncTask<String, Void, String> {
                     i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     ctx.startActivity(i);
                     break;
-//                case "Doctor":
-//                    Intent i = new Intent(ctx,DoctorLoginActivity.class);
-//                    i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                    ctx.startActivity(i);
-//                    break;
-//                case "Donor":
-//                    Intent i = new Intent(ctx,DonorLoginActivity.class);
-//                    i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                    ctx.startActivity(i);
-//                    break;
+                case "Doctor":
+                    Intent i2 = new Intent(ctx,DoctorReferral.class);
+                    i2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    ctx.startActivity(i2);
+                    break;
+                case "Donor":
+                    Intent i3 = new Intent(ctx,DonorLoginActivity.class);
+                    i3.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    ctx.startActivity(i3);
+                    break;
                 default: {
                     Toast.makeText(ctx, "Invalid ID or PASSWORD", Toast.LENGTH_LONG).show();
                 }
