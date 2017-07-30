@@ -26,11 +26,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name"/>
-        <EditText
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
             android:id="@+id/et_don_dob"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Date of birth"/>
+            android:hint="Set"/>
+            <TextView
+                android:id="@+id/et_don_dob1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/et_don_dob"
+                android:hint="Date of Birth"/>
+        </RelativeLayout>
+
         <EditText
             android:id="@+id/et_don_phone"
             android:layout_width="match_parent"
@@ -47,7 +58,9 @@
             android:layout_height="wrap_content"
             android:text="Register"
             android:textColor="#FFFFFF"
-            android:background="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorPrimaryDark"
             android:onClick="registerDonor"/>
     </LinearLayout>
 </ScrollView>

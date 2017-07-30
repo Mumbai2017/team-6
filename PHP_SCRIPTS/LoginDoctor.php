@@ -1,7 +1,7 @@
 <?php
 
-         $email = $_GET['email'];
-         $password = $_GET['password'];
+         $email = $_GET['us'];
+         $password = $_GET['pw'];
 
          $con = mysqli_connect("localhost","root","root","makeawish");
          if (!$con)
@@ -9,9 +9,8 @@
                          die('Could not connect: ' . mysql_error());
                 }
 
-           mysqli_select_db($con ,"root");
-
-           $query = "select name from doctor where email='$email' AND password='$password'";
+          
+           $query = "select email from doctor where email='$email' AND password='$password'";
             
            $i=mysqli_query($con,$query);
 

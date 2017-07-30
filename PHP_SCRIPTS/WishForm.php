@@ -2,7 +2,7 @@
 $referreddetails = $_GET['referreddetails'];
 $w_id = $_GET['w_id'];
 $pt_id = $_GET['pt_id'];
-$special_notes = $_GET['Special Notes'];
+$special_notes = $_GET['pecialnotes'];
 $dateofadmission = $_GET['dateofadmission'];
 $dateidentified = $_GET['dateidentified'];
 $wish1 = $_GET['wish1'];
