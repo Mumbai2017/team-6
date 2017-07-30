@@ -45,23 +45,11 @@
             android:layout_height="match_parent"
             android:text="Female"/>
     </RadioGroup>
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/et_pat_dob"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Set"/>
     <EditText
-        android:id="@+id/btn_pat_dob"
+        android:id="@+id/et_pat_dob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Date of birth"
-        android:layout_toRightOf="@+id/et_pat_dob"
-        android:inputType="number" />
-
-        </RelativeLayout>
+        android:hint="Date of birth" />
     <EditText
         android:id="@+id/et_pat_mother_tongue"
         android:layout_width="match_parent"
@@ -125,12 +113,14 @@
             android:id="@+id/et_pat_d1.1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="@string/d1.1"
             android:textColor="#000000"/>
         <TextView
             android:id="@+id/et_pat_d1.2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="@string/d1.2"
             android:textColor="#000000"/>
 
@@ -138,11 +128,13 @@
             android:id="@+id/et_pat_d2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="@string/d2"/>
         <CheckBox
             android:id="@+id/et_pat_d3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="@string/d3"/>
 
         <EditText
@@ -156,36 +148,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name of Doctor"/>
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/btn_pat_dt_admn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Set"/>
+
         <EditText
             android:id="@+id/et_pat_dt_admn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/btn_pat_dt_admn"
             android:hint="Date of Admission"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/btn_pat_dt_identified"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Set"/>
+
         <EditText
             android:id="@+id/et_pat_dt_identified"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/btn_pat_dt_identified"
             android:hint="Date of Identified"/>
-        </RelativeLayout>
 
         <EditText
             android:id="@+id/et_pat_stay"
@@ -210,20 +184,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="3st Wish identified with explaination"/>
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/btn_pat_proposed_dt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Set"/>
+
             <EditText
             android:id="@+id/et_pat_prposed_dt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Proposed Date of wish fulfillment"/>
-        </RelativeLayout>
+
 
         <EditText
             android:id="@+id/et_pat_rushwish"
@@ -312,9 +279,13 @@
             android:hint="What would you like to be when you grow up"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Submit"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff"
             android:onClick="submitGrantForm"
             android:textAlignment="center"/>
 

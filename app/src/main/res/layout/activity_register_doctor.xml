@@ -83,6 +83,8 @@ tools:context="com.example.acer1.makeawish.DoctorRegisterActivity">
         android:text="Register"
         android:background="@color/colorPrimaryDark"
         android:textColor="#FFFFFF"
-        android:onClick="registerDoctor" />
+        android:onClick="registerDoctor"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
 </LinearLayout>
 </ScrollView>

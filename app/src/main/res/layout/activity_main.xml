@@ -10,15 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <ImageView
             android:id="@+id/logo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_gravity="center"
-            android:src="@drawable/logo1" />
+            android:src="@drawable/b1"
+            android:layout_weight="1.94" />
 
         <EditText
             android:id="@+id/et_login_email"
