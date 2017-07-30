@@ -63,7 +63,7 @@ public class WishGrantingForm extends AppCompatActivity {
     }
 
     public void showDialogbtn1(){
-        btn1=(Button) findViewById(R.id.et_pat_dt_admn);
+        btn1=(Button) findViewById(R.id.btn_pat_dt_admn);
         btn.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -75,7 +75,7 @@ public class WishGrantingForm extends AppCompatActivity {
     }
 
     public void showDialogbtn2(){
-        btn1=(Button) findViewById(R.id.et_pat_dt_admn);
+        btn1=(Button) findViewById(R.id.btn_pat_dt_admn);
         btn.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -86,7 +86,7 @@ public class WishGrantingForm extends AppCompatActivity {
         );
     }
     public void showDialogbtn3(){
-        btn1=(Button) findViewById(R.id.et_pat_prposed_dt);
+        btn1=(Button) findViewById(R.id.btn_pat_proposed_dt);
         btn.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
