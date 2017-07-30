@@ -2,7 +2,7 @@
          $email = $_GET['us'];
          $password = $_GET['pw'];
 $con = mysqli_connect('localhost','root','root','makeawish') or die('Unable to connect');
-$query = "select email from volunteers where email='$email' AND password='$password'";
+$query = "select email from doctor where email='$email' AND password='$password'";
             
            $i=mysqli_query($con,$query);
          $count = 0;
