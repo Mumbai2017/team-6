@@ -132,7 +132,7 @@ class WishRegister extends AsyncTask<String, Void, String> {
         }
         else
         {
-            Toast.makeText(ctx,"Unable to register. Please try again",Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx,"Successfully Registered the response!",Toast.LENGTH_LONG).show();
         }
     }
 }
