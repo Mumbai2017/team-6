@@ -9,7 +9,7 @@
                          die('Could not connect: ' . mysql_error());
                 }
 
-           mysqli_select_db($con ,"root");
+           mysqli_select_db($con ,"makeawish");
 
            $query = "select email from volunteers where email='$email' AND password='$password'";
             
