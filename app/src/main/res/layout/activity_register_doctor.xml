@@ -48,11 +48,22 @@ tools:context="com.example.acer1.makeawish.DoctorRegisterActivity">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Hospital" />
-    <EditText
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
         android:id="@+id/et_doc_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Set "/>
+
+    <TextView
+        android:id="@+id/et_doc_dob1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/et_doc_dob"
         android:hint="Date of birth" />
+    </RelativeLayout>
     <RadioGroup
         android:id="@+id/rg_doc_gender"
         android:layout_width="match_parent"
@@ -70,7 +81,7 @@ tools:context="com.example.acer1.makeawish.DoctorRegisterActivity">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
         android:textColor="#FFFFFF"
         android:onClick="registerDoctor" />
 </LinearLayout>

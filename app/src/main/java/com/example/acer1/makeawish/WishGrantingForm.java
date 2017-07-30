@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class WishGrantingForm extends AppCompatActivity {
 
     Button btn,btn1,btn2,btn3;
+    TextView dt1,dt2,dt3,dt;
     int year_x,month_x,day_x;
     static final int DIALOG_ID=0;
 
@@ -29,7 +31,7 @@ public class WishGrantingForm extends AppCompatActivity {
     }
 
     public void showDialogbtn(){
-        btn=(Button) findViewById(R.id.et_pat_number);
+        btn=(Button) findViewById(R.id.et_pat_dob);
         btn.setOnClickListener(
                 new View.OnClickListener() {
                     @Override

@@ -30,12 +30,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name of Life-threathing disease" />
-
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <Button
             android:id="@+id/ref_dob"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Date of Birth of child" />
+            <TextView
+                android:id="@+id/ref_dob1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ref_dob"
+                android:hint="Date of Birth"/>
+        </RelativeLayout>
 
         <Button
             android:layout_width="match_parent"

@@ -10,16 +10,21 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class DoctorRegisterActivity extends AppCompatActivity {
     Button btn;
     int year_x,month_x,day_x;
     static final int DIALOG_ID=0;
+    String date="1995-5-12";
+    TextView dob;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_doctor);
+        dob = (TextView) findViewById(R.id.et_vol_dob1);
+
         showDialogbtn();
     }
 
@@ -31,7 +36,6 @@ public class DoctorRegisterActivity extends AppCompatActivity {
         EditText phone = (EditText) findViewById(R.id.et_doc_age);
         EditText alt_phone = (EditText) findViewById(R.id.et_doc_alt_phone);
         EditText hosp = (EditText) findViewById(R.id.et_doc_hosp_name);
-        EditText dob = (EditText) findViewById(R.id.et_doc_dob);
 
         RadioGroup gender = (RadioGroup) findViewById(R.id.rg_doc_gender);
         RadioButton checkedGender = (RadioButton) findViewById(gender.getCheckedRadioButtonId());
@@ -44,7 +48,7 @@ public class DoctorRegisterActivity extends AppCompatActivity {
                         + phone.getText().toString() + ","
                         + alt_phone.getText().toString() + ","
                         + hosp.getText(),toString() + ","
-                        + dob.getText().toString() + ","
+                        + date + ","
                         + checkedGender.getText().toString());
     }
 

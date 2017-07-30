@@ -10,16 +10,20 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class DonorRegisterActivity extends AppCompatActivity {
     Button btn;
     int year_x,month_x,day_x;
     static final int DIALOG_ID=0;
+    TextView dob;
+    String date="1995-5-12";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donor_register);
+        dob = (TextView) findViewById(R.id.et_don_dob1);
         showDialogbtn();
     }
 
@@ -27,7 +31,6 @@ public class DonorRegisterActivity extends AppCompatActivity {
         EditText email = (EditText) findViewById(R.id.et_don_email);
         EditText password = (EditText) findViewById(R.id.et_don_password);
         EditText name = (EditText) findViewById(R.id.et_don_name);
-        Button dob = (Button) findViewById(R.id.et_don_dob);
         EditText phone = (EditText) findViewById(R.id.et_don_phone);
         EditText location = (EditText) findViewById(R.id.et_don_location);
 
@@ -59,7 +62,6 @@ public class DonorRegisterActivity extends AppCompatActivity {
             year_x=year;
             month_x=month;
             day_x=dayOfMonth;
-            Toast.makeText(DonorRegisterActivity.this,year_x+"/"+month_x+"/"+day_x, Toast.LENGTH_LONG).show();
 
         }
     };
