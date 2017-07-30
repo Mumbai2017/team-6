@@ -75,14 +75,14 @@
                         </a>
                     </li>
                     
-                    
+                    <!--
                     <li>
                         <a href="icons.html">
                             <i class="material-icons">bubble_chart</i>
                             <p>Social Media Posts</p>
                         </a>
                     </li>
-
+                    -->
                     
                     <li>
                         <a href="prioritize_requests.php">
