@@ -9,8 +9,7 @@
                          die('Could not connect: ' . mysql_error());
                 }
 
-           mysqli_select_db($con ,"root");
-
+          
            $query = "select email from doctor where email='$email' AND password='$password'";
             
            $i=mysqli_query($con,$query);
